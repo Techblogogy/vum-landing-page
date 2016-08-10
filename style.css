@@ -1,0 +1,48 @@
+
+
+body, html, main {
+	/* important */
+	height: 100%;
+}
+
+
+/* === NAVIGATION AREA === */
+.navbar-default {
+    background-color: #efcf02;
+    border-radius: 0px;
+
+    opacity: 0.9;
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar-brand > img{
+    width: 80px;
+
+    border: 4px solid white;
+    border-radius: 2px;
+}
+
+/* === PAGE BLOCKS === */
+
+.vm-bg-ctn {
+    min-height: 100%;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+.vm-ctn {
+    min-height: 100%;
+}
+
+#test-1 {
+    background-image: url("res/bg1.jpg");
+}
