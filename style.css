@@ -30,6 +30,8 @@ body, html, main {
 .vm-bg-ctn {
     min-height: 100%;
 
+    position: relative;
+
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -40,9 +42,28 @@ body, html, main {
 }
 
 .vm-ctn {
+    position: relative;
     min-height: 100%;
 }
 
-#test-1 {
+.vm-container {
+    /*text-align: center;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* === BLOCK SPECIFIC === */
+
+#test-1, #test-3 {
     background-image: url("res/bg1.jpg");
+}
+#test-2 {
+    background-color: #efcf02;
 }
