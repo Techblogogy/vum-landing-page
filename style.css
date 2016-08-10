@@ -10,6 +10,10 @@ body, html, main {
     from { opacity: 0; }
     to { opacity: 100; }
 }
+@keyframes fadeInAnimNav {
+    from { opacity: 0; }
+    to { opacity: 90; }
+}
 @keyframes fadeOutAnim {
     to { opacity: 0; }
 }
@@ -19,14 +23,17 @@ body, html, main {
     animation: fadeInAnim .5s ease both;
 }
 .fadeOut {
-    animation: fadeOutAnim .5s ease both;
+    animation: fadeOutAnim .5s ease both !important;
 }
 
 .fadeInLoadNav {
     display: block !important;
 
-    animation-delay: 1s !important;
-    animation: fadeInAnim 1s ease both;
+
+    /*animation-delay: 1s !important;
+    animation: fadeInAnimNav 1s ease both !important;*/
+
+    opacity: 0.9 !important;
 }
 .fadeInLoad {
     animation: fadeInAnim 2s ease both;
@@ -39,7 +46,7 @@ body, html, main {
     border-color: #fff;
     border-radius: 0px;
 
-    opacity: 0.9;
+    opacity: 0.9 !important;
 }
 
 .navbar-brand {
@@ -138,9 +145,17 @@ body, html, main {
 }
 
 .vm-question > .vm-qst-body {
-    padding: 20px;
 
     font-size: 18pt;
+}
+
+.vm-question > .vm-qst-body > .vm-ans-span {
+    display: block;
+    font-weight: 300;
+    padding: 10px 20px 10px 20px;
+    /*margin-bottom: 10px !important;*/
+
+    border-bottom: 1px solid rgb(167, 167, 167);
 }
 
 /* === BUTTON STYLE === */
