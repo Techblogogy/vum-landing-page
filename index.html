@@ -26,7 +26,7 @@
 <body>
 
     <!-- TODO: Navigation Area -->
-    <nav class="navbar navbar-fixed-top navbar-default">
+    <nav class="navbar navbar-fixed-top navbar-default fadeInLoadNav">
         <div class="container">
 
             <!-- Logo header -->
@@ -43,7 +43,7 @@
     <div id="test-1" class="vm-bg-ctn">
         <div>
 
-            <div class="vm-container" id="vm-greeting-area">
+            <div class="vm-container fadeInLoad" id="vm-greeting-area">
                 <h1 class="heading">Пройдіть тест до Дня Незалежності</h1>
                 <button type="button" class="btn btn-vm" onclick="slideOut()">Розпочати</button>
             </div>
@@ -53,6 +53,13 @@
                     <div class="vm-question">
                         <div class="vm-qst-head">
                             <h2>№ 1. Лорем іпсум щось там таке, отже це просто питання 1 і так воно буде відображатися?</h2>
+                        </div>
+
+                        <div class="vm-qst-body">
+                            <input type="radio" class="ans-item" name="qst-1" checked> <span>Option 1</span> <br />
+                            <input type="radio" class="ans-item" name="qst-1"> <span>Option 2</span> <br />
+                            <input type="radio" class="ans-item" name="qst-1"> <span>Option 3</span> <br />
+                            <input type="radio" class="ans-item" name="qst-1"> <span>Option 4</span> <br />
                         </div>
                     </div>
 
