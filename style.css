@@ -1,8 +1,8 @@
 
 
 body, html, main {
-	/* important */
-	height: 100%;
+    /* important */
+    height: 100%;
 }
 
 /* === CSS Transitions === */
@@ -91,12 +91,38 @@ body, html, main {
 }
 
 .vm-test {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(228, 228, 228, 0.8);
+
+    top: 55%;
 
     display: none;
-    width: 98%;
+    width: 95%;
+    min-height: 80%;
 
     border-radius: 10px;
+
+    /*padding: 20px;*/
+    padding: 0px;
+
+    color: #1f1f1f;
+}
+
+.vm-question > .vm-qst-head  h2 {
+    font-weight: 300;
+    margin: 0px;
+}
+.vm-question > .vm-qst-head {
+    background-color: rgba(238, 207, 2, 0.8);
+
+    text-align: left;
+    border-bottom: 1px solid rgb(144, 144, 144);
+
+    padding: 15px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    color: #494949;
 }
 
 /* === BUTTON STYLE === */
@@ -131,6 +157,10 @@ body, html, main {
     border-color: rgb(238, 207, 2) !important;
     color: #efcf02 !important;
 }
+
+/* === TIMELINE === */
+
+
 
 /* === BLOCK SPECIFIC === */
 
