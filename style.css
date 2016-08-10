@@ -91,7 +91,7 @@ body, html, main {
 }
 
 .vm-test {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
 
     display: none;
     width: 98%;
@@ -134,9 +134,13 @@ body, html, main {
 
 /* === BLOCK SPECIFIC === */
 
-#test-1, #test-3 {
+#test-1 {
     background-image: url("res/bg1.jpg");
 }
+#test-3 {
+    background-image: url("res/bg2.jpg");
+}
+
 #test-2 {
     background-color: #efcf02;
 }
