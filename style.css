@@ -9,19 +9,20 @@ body, html, main {
 /* === NAVIGATION AREA === */
 .navbar-default {
     background-color: #efcf02;
+    border-color: #fff;
     border-radius: 0px;
 
     opacity: 0.9;
 }
 
 .navbar-brand {
-    padding: 5px;
+    padding: 3px;
 }
 
 .navbar-brand > img{
     width: 80px;
 
-    border: 4px solid white;
+    border: 2px solid white;
     border-radius: 2px;
 }
 
