@@ -5,6 +5,8 @@ body, html, main {
 	height: 100%;
 }
 
+/* === CSS Transitions === */
+
 
 /* === NAVIGATION AREA === */
 .navbar-default {
@@ -49,15 +51,62 @@ body, html, main {
 
 .vm-container {
     /*text-align: center;*/
+    background-color: rgba(124, 124, 124, 0.3);
     position: absolute;
     top: 50%;
     left: 50%;
+
+    width: 100%;
+
+    padding: 5px;
 
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+}
+.vm-container > .heading {
+
+    color: #fff;
+
+    font-size: 32pt;
+    font-weight: 300;
+
+    margin-bottom: 30px;
+}
+
+/* === BUTTON STYLE === */
+.btn-vm {
+    background-color: rgba(0, 0, 0, 0.0);
+
+    transition: .2s;
+
+    color: #fff;
+
+    font-size: 18pt;
+    font-weight: 300;
+
+    border-width: 2px;
+    border-color: #fff;
+
+    margin-bottom: 30px;
+
+    outline: none !important;
+}
+.btn-vm:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+
+    border-color: #efcf02;
+    color: #efcf02;
+}
+.btn-vm:active, .btn-visited:focus, .btn-visited:visited {
+    transition: .0s;
+
+    background-color: rgba(238, 207, 2, 0.1) !important;
+
+    border-color: rgb(238, 207, 2) !important;
+    color: #efcf02 !important;
 }
 
 /* === BLOCK SPECIFIC === */
