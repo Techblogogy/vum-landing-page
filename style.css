@@ -6,7 +6,21 @@ body, html, main {
 }
 
 /* === CSS Transitions === */
+@keyframes fadeInAnim {
+    from { opacity: 0; }
+    to { opacity: 100; }
+}
+@keyframes fadeOutAnim {
+    to { opacity: 0; }
+}
 
+.fadeIn {
+    display: block !important;
+    animation: fadeInAnim .5s ease both;
+}
+.fadeOut {
+    animation: fadeOutAnim .5s ease both;
+}
 
 /* === NAVIGATION AREA === */
 .navbar-default {
@@ -74,6 +88,15 @@ body, html, main {
     font-weight: 300;
 
     margin-bottom: 30px;
+}
+
+.vm-test {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    display: none;
+    width: 98%;
+
+    border-radius: 10px;
 }
 
 /* === BUTTON STYLE === */

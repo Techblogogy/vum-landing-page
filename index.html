@@ -41,9 +41,17 @@
 
     <!-- TODO: Testing Area -->
     <div id="test-1" class="vm-bg-ctn">
-        <div class="vm-container">
-            <h1 class="heading">Пройдіть тест до Дня Незалежності</h1>
-            <button type="button" class="btn btn-vm">Розпочати</button>
+        <div>
+
+            <div class="vm-container" id="vm-greeting-area">
+                <h1 class="heading">Пройдіть тест до Дня Незалежності</h1>
+                <button type="button" class="btn btn-vm" onclick="slideOut()">Розпочати</button>
+            </div>
+
+            <div class="vm-container vm-test" id="vm-test-area">
+                <h1 class="heading">тест</h1>
+            </div>
+
         </div>
     </div>
 
@@ -61,6 +69,8 @@
     <!-- TODO: About VUM Area -->
 
 
+    <!-- VUM Scripts -->
+    <script src="script.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
