@@ -130,6 +130,10 @@ body, html, main {
     text-align: left;
 }
 
+/*#q2 {
+    transform: translateY(-100%);
+}*/
+
 .vm-question .vm-qst-head  h2 {
     font-weight: 300;
     margin: 0px;
