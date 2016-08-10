@@ -41,8 +41,6 @@
 
     <!-- TODO: Testing Area -->
     <div id="test-1" class="vm-bg-ctn">
-        <div>
-
             <div class="vm-container fadeInLoad" id="vm-greeting-area">
                 <h1 class="heading">Пройдіть тест до Дня Незалежності</h1>
                 <button type="button" class="btn btn-vm" onclick="slideOut()">Розпочати</button>
@@ -50,7 +48,8 @@
 
             <div class="vm-container vm-test container" id="vm-test-area">
 
-                    <div class="vm-question">
+                <div class="vm-question">
+                    <div id="q1" class="vm-qst">
                         <div class="vm-qst-head">
                             <h2>№ 1. Лорем іпсум щось там таке, отже це просто питання 1 і так воно буде відображатися?</h2>
                         </div>
@@ -63,9 +62,26 @@
                         </div>
                     </div>
 
-            </div>
+                    <div id="q2" class="vm-qst" style="display: none">
+                        <div class="vm-qst-head">
+                            <h2>№ 2. Another day, another 20 million dollars?</h2>
+                        </div>
 
-        </div>
+                        <div class="vm-qst-body">
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1" checked> This is it <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> Ticket to ride <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> More work <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> And Tanya will be here<br /></span>
+                        </div>
+                    </div>
+
+
+                    <div class="vm-qst-footer">
+                        <button type="button" class="btn btn-vm" onclick="nextQst()">Next</button>
+                    </div>
+                </div>
+
+            </div>
     </div>
 
     <div id="test-2" class="vm-ctn">
