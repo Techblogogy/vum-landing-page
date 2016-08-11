@@ -274,6 +274,14 @@ blockquote {
     cursor: pointer;
 }
 
+.vm-question .vm-qst-body > .vm-correct {
+    background-color: rgba(17, 210, 0, 0.65) !important;
+}
+.vm-question .vm-qst-body > .vm-wrong {
+    background-color: rgba(210, 0, 0, 0.65) !important;
+}
+
+
 .vm-question .vm-qst-body > input[type="radio"]{
     display: none;
 }
