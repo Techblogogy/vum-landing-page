@@ -75,7 +75,7 @@ function nextQst() {
 
     } else {
 
-        $("#vm-next").html("Далі");
+        $("#vm-next").html("Перевірити");
 
         $("#q"+curQst).fadeOut(200, function () {
 
