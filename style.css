@@ -259,14 +259,28 @@ blockquote {
     font-size: 18pt;
 }
 
-.vm-question .vm-qst-body > .vm-ans-span {
+.vm-question .vm-qst-body > label {
     display: block;
     font-weight: 300;
     padding: 10px 20px 10px 20px;
     /*margin-bottom: 10px !important;*/
+    margin-bottom: 0px;
 
     border-bottom: 1px solid rgb(167, 167, 167);
 }
+.vm-question .vm-qst-body > label:hover {
+    cursor: pointer;
+}
+
+.vm-question .vm-qst-body > input[type="radio"]{
+    display: none;
+}
+.vm-question .vm-qst-body > input[type="radio"]:checked + label{
+    /*background-color: rgba(223, 233, 63, 0.75);*/
+    background-color: rgba(223, 233, 63, 0.75);
+}
+/*.vm-question .vm-qst-body > .vm-ans-span > label {
+}*/
 
 .vm-question .vm-qst-footer {
     background-color: rgba(238, 207, 2, 0.8);
