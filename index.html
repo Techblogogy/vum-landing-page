@@ -61,23 +61,23 @@
             <div class="vm-test" id="vm-test-area">
 
                 <div class="vm-question">
-                    <div id="q2" class="vm-qst" style="display: none">
+                    <div id="q2" class="vm-qst" style="display: none; --transform-webkit: translateX(-100%)">
                         <div class="vm-qst-head">
                             <h2>№ 2. Sed convallis ut dui non fermentum?</h2>
                         </div>
 
                         <div class="vm-qst-body">
                             <input type="radio" class="vm-ans" id="ans-5" name="qst-2" checked>
-                            <label for="ans-5">Etiam auctor pretium iaculis.</label>
+                            <label id="ans-lb-5" for="ans-5">Etiam auctor pretium iaculis.</label>
 
                             <input type="radio" class="vm-ans" id="ans-6" name="qst-2">
-                            <label for="ans-6">Vestibulum ultricies venenatis felis id scelerisque.</label>
+                            <label id="ans-lb-6" for="ans-6">Vestibulum ultricies venenatis felis id scelerisque.</label>
 
-                            <input type="radio" class="vm-ans" id="ans-7" name="qst-2">
-                            <label for="ans-7">Vivamus aliquet sit amet lectus aliquam congue.</label>
+                            <input type="radio" class="vm-ans" id="ans-7" name="qst-2" vm-correct>
+                            <label id="ans-lb-7" for="ans-7">Vivamus aliquet sit amet lectus aliquam congue.</label>
 
                             <input type="radio" class="vm-ans" id="ans-8" name="qst-2">
-                            <label for="ans-8">Pellentesque sodales, metus eget imperdiet finibus, ante lacus mollis metus, sed vulputate turpis libero sed felis.</label>
+                            <label id="ans-lb-8" for="ans-8">Pellentesque sodales, metus eget imperdiet finibus, ante lacus mollis metus, sed vulputate turpis libero sed felis.</label>
                         </div>
                     </div>
 
@@ -87,17 +87,17 @@
                         </div>
 
                         <div class="vm-qst-body">
-                            <input type="radio" class="vm-ans" id="ans-1" name="qst-1" checked>
-                            <label class="vm-wrong" for="ans-1">Aenean velit nunc, vulputate ac dapibus tristique, vulputate nec ligula.</label>
+                            <input type="radio" class="vm-ans" id="ans-1" name="qst-1" checked vm-correct>
+                            <label id="ans-lb-1" for="ans-1">Aenean velit nunc, vulputate ac dapibus tristique, vulputate nec ligula.</label>
 
                             <input type="radio" class="vm-ans" id="ans-2" name="qst-1">
-                            <label for="ans-2">Nunc dignissim pulvinar nisl sed scelerisque.</label>
+                            <label id="ans-lb-2" for="ans-2">Nunc dignissim pulvinar nisl sed scelerisque.</label>
 
                             <input type="radio" class="vm-ans" id="ans-3" name="qst-1">
-                            <label for="ans-3">Suspendisse pulvinar mauris et magna condimentum gravida.</label>
+                            <label id="ans-lb-3" for="ans-3">Suspendisse pulvinar mauris et magna condimentum gravida.</label>
 
                             <input type="radio" class="vm-ans" id="ans-4" name="qst-1">
-                            <label for="ans-4">Quisque sit amet nulla sit amet magna aliquet dignissim in at felis.</label>
+                            <label id="ans-lb-4" for="ans-4">Quisque sit amet nulla sit amet magna aliquet dignissim in at felis.</label>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@
                     <div id="vm-finnish" class="vm-qst-end" style="display: none">
                         <div class="vm-qst-body">
                             <!-- <h1 class="vm-greetings">Вітаємо!</h1> -->
-                            <h1 class="vm-score">Ваш результат: <span id="vm-score">80</span>%</h1>
+                            <h1 class="vm-score">Ваш результат: <span id="vm-id-score">80</span>%</h1>
 
                             <h2 class="vm-share-head">Поділитися в соц. мережах</h2>
 
@@ -118,7 +118,7 @@
 
 
                     <div id="vm-qst-foot" class="vm-qst-footer">
-                        <button id="vm-next" type="button" class="btn btn-vm" onclick="nextQst()">Далі</button>
+                        <button id="vm-next" type="button" class="btn btn-vm" onclick="nextQst()">Перевірити</button>
                     </div>
                 </div>
 

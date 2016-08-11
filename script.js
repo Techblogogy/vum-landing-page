@@ -42,18 +42,58 @@ function smallLogo() {
 
 var curQst = 1;
 var maxQst = 2;
+
+var score = 0;
+var scoreI = 100/maxQst;
+
+var bState = false;
+
 function nextQst() {
-    $("#q"+curQst).fadeOut(200, function () {
 
-        curQst++;
+    bState = !bState;
 
-        if (curQst <= maxQst) {
-            $("#q"+curQst).fadeIn(200);
+    if (bState) {
+
+        $("#vm-next").html("Далі");
+
+        // Disable all input elements in group
+        $('input[name="qst-'+curQst+'"]').attr('disabled', 'disabled');
+
+        // Check for selected answer correctnes
+        if ( $("input[name=qst-"+curQst+"]:checked").attr("vm-correct") !== undefined ) {
+
+            $("label[for='"+ $("input[name=qst-"+curQst+"]:checked").attr('id') +"']").addClass("vm-correct");
+
+            score += scoreI;
+            // console.log(score);
+
         } else {
-            $("#vm-finnish").fadeIn(200);
-            $("#vm-qst-foot").hide();
+            $("label[for='"+ $("input[name=qst-"+curQst+"][vm-correct]").attr('id') +"']").addClass("vm-correct");
+            $("label[for='"+ $("input[name=qst-"+curQst+"]:checked").attr('id') +"']").addClass("vm-wrong");
+
         }
-    });
+
+    } else {
+
+        $("#vm-next").html("Далі");
+
+        $("#q"+curQst).fadeOut(200, function () {
+
+            curQst++;
+
+            if (curQst <= maxQst) {
+                $("#q"+curQst).fadeIn(200);
+            } else {
+                $("#vm-id-score").html( Math.round(score) );
+
+                $("#vm-finnish").fadeIn(200);
+                $("#vm-qst-foot").hide();
+            }
+        });
+
+    }
+
+
 
     // $("#q"+curQst).animate({ left: "+=50" }, 1000, function () {
     //
