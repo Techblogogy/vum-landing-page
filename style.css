@@ -5,6 +5,14 @@ body, html, main {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+blockquote {
+    border-left-color: #d6b904;
+}
+
 /* === CSS Transitions === */
 @keyframes fadeInAnim {
     from { opacity: 0; }
@@ -81,7 +89,7 @@ body, html, main {
 }
 
 .navbar-brand > img{
-    width: 80px;
+    width: 60px;
 
     border: 2px solid white;
     border-radius: 2px;
@@ -119,6 +127,11 @@ body, html, main {
 
 .vm-ctn {
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     min-height: 100%;
 }
 
@@ -155,6 +168,23 @@ body, html, main {
 
     margin-bottom: 30px;
 }
+
+/* === TEXT BLOCKS AREA === */
+.vm-ctn .vm-block-head {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.vm-ctn .vm-column {
+    text-align: justify;
+
+    font-size: 16pt;
+}
+
+.vm-ctn > .container {
+    margin-bottom: 20px;
+}
+
 
 /* === TESTING AREA === */
 
@@ -326,13 +356,16 @@ body, html, main {
 
 /* === BLOCK SPECIFIC === */
 
-#test-1 {
+#block-1 {
     background-image: url("res/bg1.jpg");
 }
-#test-3 {
+#block-3 {
+    background-image: url("res/bg5.jpg");
+}
+#block-5 {
     background-image: url("res/bg3.jpg");
 }
 
-#test-2 {
+#block-2, #block-4 {
     background-color: #efcf02;
 }
