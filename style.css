@@ -217,15 +217,15 @@ body, html, main {
 .vm-question .vm-qst-end .vm-share {
     display: inline-block;
 
-    padding: 15px 30px 15px 30px;
+    padding: 14px 30px 15px 30px;
     margin-bottom: 80px;
 
-    border-radius: 5px;
+    border-radius: 10px;
 
-    background-color: rgba(142, 142, 142, 0.6);
+    background-color: rgba(184, 184, 184, 0.76);
 }
 .vm-question .vm-qst-end .vm-share > .vm-social > img{
-    width: 35px;
+    width: 50px;
 }
 
 /* === BUTTON STYLE === */
