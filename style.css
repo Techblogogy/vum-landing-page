@@ -267,6 +267,8 @@ blockquote {
     margin-bottom: 0px;
 
     border-bottom: 1px solid rgb(167, 167, 167);
+
+    transition: .2s;
 }
 .vm-question .vm-qst-body > label:hover {
     cursor: pointer;
