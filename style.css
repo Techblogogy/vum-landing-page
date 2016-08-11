@@ -196,11 +196,36 @@ body, html, main {
 .vm-question .vm-qst-end {
     text-align: center;
 
-    padding: 50px;
+    padding: 20px;
 }
 
-.vm-question .vm-qst-end h1 {
+.vm-question .vm-qst-end h1, .vm-question .vm-qst-end h2 {
     font-weight: 300;
+}
+
+.vm-question .vm-qst-end .vm-greeting {
+    margin-top: 0px;
+}
+.vm-question .vm-qst-end .vm-score {
+    margin-top: 80px;
+}
+.vm-question .vm-qst-end .vm-share-head {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.vm-question .vm-qst-end .vm-share {
+    display: inline-block;
+
+    padding: 15px 30px 15px 30px;
+    margin-bottom: 80px;
+
+    border-radius: 5px;
+
+    background-color: rgba(142, 142, 142, 0.6);
+}
+.vm-question .vm-qst-end .vm-share > .vm-social > img{
+    width: 35px;
 }
 
 /* === BUTTON STYLE === */
