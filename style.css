@@ -193,6 +193,16 @@ body, html, main {
     border-color: #919191 !important;
 }
 
+.vm-question .vm-qst-end {
+    text-align: center;
+
+    padding: 50px;
+}
+
+.vm-question .vm-qst-end h1 {
+    font-weight: 300;
+}
+
 /* === BUTTON STYLE === */
 .btn-vm {
     background-color: rgba(0, 0, 0, 0.0);

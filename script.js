@@ -5,11 +5,18 @@ function slideOut () {
 }
 
 var curQst = 1;
+var maxQst = 2;
 function nextQst() {
-    $("#q"+curQst).fadeOut(300, function () {
+    $("#q"+curQst).fadeOut(200, function () {
 
         curQst++;
-        $("#q"+curQst).fadeIn(300);
+
+        if (curQst <= maxQst) {
+            $("#q"+curQst).fadeIn(200);
+        } else {
+            $("#vm-finnish").fadeIn(200);
+            $("#vm-qst-foot").hide();
+        }
     });
 
     // $("#q"+curQst).animate({ left: "+=50" }, 1000, function () {

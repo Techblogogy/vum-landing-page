@@ -69,16 +69,23 @@
                         </div>
 
                         <div class="vm-qst-body">
-                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1" checked> This is it <br /></span>
-                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> Ticket to ride <br /></span>
-                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> More work <br /></span>
-                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-1"> And Tanya will be here<br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-2" checked> This is it <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-2"> Ticket to ride <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-2"> More work <br /></span>
+                            <span class="vm-ans-span"> <input type="radio" class="vm-ans" name="qst-2"> And Tanya will be here<br /></span>
+                        </div>
+                    </div>
+
+                    <div id="vm-finnish" class="vm-qst-end" style="display: none">
+                        <div class="vm-qst-body">
+                            <h1>Вітаємо!</h1>
+                            <h1>Ваш результат: <span id="vm-score">80</span>%</h1>
                         </div>
                     </div>
 
 
-                    <div class="vm-qst-footer">
-                        <button type="button" class="btn btn-vm" onclick="nextQst()">Next</button>
+                    <div id="vm-qst-foot" class="vm-qst-footer">
+                        <button id="vm-next" type="button" class="btn btn-vm" onclick="nextQst()">Next</button>
                     </div>
                 </div>
 
@@ -86,13 +93,11 @@
     </div>
 
     <div id="test-2" class="vm-ctn">
-        <div class="vm-container">
-        </div>
     </div>
 
     <div id="test-3" class="vm-bg-ctn">
         <div class="vm-container">
-            <h3>Something cool</h3>
+            <h3 class="heading">Something cool</h3>
         </div>
     </div>
 
