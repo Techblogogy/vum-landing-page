@@ -130,6 +130,17 @@ body, html, main {
     text-align: left;
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+    .vm-test {
+        width: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .vm-test {
+        width: 50%;
+    }
+}
+
 /*#q2 {
     transform: translateY(-100%);
 }*/
