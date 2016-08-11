@@ -4,6 +4,42 @@ function slideOut () {
     $("#vm-greeting-area").addClass('fadeOut');
 }
 
+function largeLogo() {
+    // setTimeout(function () {
+    if (!$("#nav-logo").hasClass("logoLarge")) {
+        $("#nav-logo").removeClass("logoShrink");
+        $("#nav-logo").addClass("logoLarge");
+    }
+    // }, 4000);
+}
+function smallLogo() {
+    // setTimeout(function () {
+    if (!$("#nav-logo").hasClass("logoShrink")) {
+        $("#nav-logo").removeClass("logoLarge");
+        $("#nav-logo").addClass("logoShrink");
+    }
+    // }, 2000);
+}
+
+// $(document).scroll(function (e) {
+//     console.log();
+//
+//     if ($(document).scrollTop() >= 200) {
+//         smallLogo();
+//     } else {
+//         largeLogo();
+//     }
+// });
+
+// window.onload = function () {
+//     smallLogo();
+//     largeLogo();
+//
+//     console.log($(document).scrollTop());
+// }
+
+
+
 var curQst = 1;
 var maxQst = 2;
 function nextQst() {

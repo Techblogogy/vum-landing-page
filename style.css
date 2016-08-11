@@ -18,6 +18,21 @@ body, html, main {
     to { opacity: 0; }
 }
 
+@keyframes shrinkLogo {
+    to {transform: scale(0.5) translateY(-46%)}
+}
+@keyframes enlargeLogo {
+    from {transform: scale(0.5) translateY(-46%)}
+}
+
+.logoShrink {
+    animation: shrinkLogo .5s ease both;
+}
+.logoLarge {
+    /*animation-delay: 2s !important;*/
+    animation: enlargeLogo .5s ease both;
+}
+
 .fadeIn {
     display: block !important;
     animation: fadeInAnim .5s ease both;
