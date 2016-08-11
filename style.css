@@ -169,6 +169,11 @@ blockquote {
     margin-bottom: 30px;
 }
 
+.vm-img {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
 /* === TEXT BLOCKS AREA === */
 .vm-ctn .vm-block-head {
     text-align: center;
@@ -176,9 +181,8 @@ blockquote {
     margin-bottom: 80px;
 }
 .vm-ctn .vm-column {
-    text-align: justify;
-
-    font-size: 16pt;
+    /*text-align: justify;*/
+    /*font-size: 16pt;*/
 }
 
 .vm-ctn > .container {
@@ -365,7 +369,21 @@ blockquote {
 #block-5 {
     background-image: url("res/bg3.jpg");
 }
+#block-5 .btn-vm {
+    margin-top: 30px;
+}
 
 #block-2, #block-4 {
     background-color: #efcf02;
+}
+
+#block-4 .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#block-4 p{
+    text-align: justify;
+}
+#block-4 {
+    text-align: center;
 }
