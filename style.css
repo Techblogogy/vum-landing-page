@@ -39,6 +39,12 @@ body, html, main {
     animation: fadeInAnim 2s ease both;
 }
 
+/* === CLEARFIX === */
+.clearfix {
+    float: none;
+    clear: none;
+}
+
 /* === NAVIGATION AREA === */
 .navbar-default {
     display: none;
@@ -47,6 +53,12 @@ body, html, main {
     border-radius: 0px;
 
     opacity: 0.9 !important;
+
+    text-align: right;
+}
+
+.navbar-header {
+    float: left;
 }
 
 .navbar-brand {
@@ -58,6 +70,15 @@ body, html, main {
 
     border: 2px solid white;
     border-radius: 2px;
+}
+
+.vm-nav-social{
+    float: right;
+
+    padding-top: 4px;
+}
+.vm-nav-social img {
+    margin-left: 5px;
 }
 
 /* === PAGE BLOCKS === */
@@ -294,7 +315,7 @@ body, html, main {
     background-image: url("res/bg1.jpg");
 }
 #test-3 {
-    background-image: url("res/bg2.jpg");
+    background-image: url("res/bg3.jpg");
 }
 
 #test-2 {
