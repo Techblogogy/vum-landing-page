@@ -1,4 +1,44 @@
 
+/*
+    Checks if element is in viewport
+*/
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
+/* Check for elements */
+$("#vm-txt-1").inViewport(function (px) {
+    if (px) {
+        $(this).addClass("mediaInLeft");
+    }
+});
+$("#vm-txt-2").inViewport(function (px) {
+    if (px) {
+        $(this).addClass("mediaInRight");
+    }
+});
+$("#vm-txt-3").inViewport(function (px) {
+    if (px) {
+        $(this).addClass("mediaInLeft");
+    }
+});
+
+$("#vm-block-5").inViewport(function(px) {
+    if (px){
+        $(this).addClass("fadeInLoad");
+    }
+})
+
+
 function slideOut () {
     $("#vm-test-area").addClass('fadeIn');
     $("#vm-greeting-area").addClass('fadeOut');

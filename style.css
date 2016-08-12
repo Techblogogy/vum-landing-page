@@ -17,7 +17,7 @@ blockquote {
 /* === CSS Transitions === */
 @keyframes fadeInAnim {
     from { opacity: 0; }
-    to { opacity: 100; }
+    to { opacity: 1; }
 }
 @keyframes fadeInAnimNav {
     from { opacity: 0; }
@@ -25,6 +25,15 @@ blockquote {
 }
 @keyframes fadeOutAnim {
     to { opacity: 0; }
+}
+
+@keyframes fadeInLeft {
+    from { transform: translateX(-100%); opacity: 0;  }
+    to { opacity: 1; }
+}
+@keyframes fadeInRight {
+    from { transform: translateX(100%); opacity: 0;  }
+    to { opacity: 1; }
 }
 
 @keyframes shrinkLogo {
@@ -61,6 +70,13 @@ blockquote {
 }
 .fadeInLoad {
     animation: fadeInAnim 2s ease both;
+}
+
+.mediaInLeft {
+    animation: fadeInLeft 1s ease both;
+}
+.mediaInRight {
+    animation: fadeInRight 1s ease both;
 }
 
 /* === CLEARFIX === */
