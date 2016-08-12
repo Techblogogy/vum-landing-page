@@ -55,31 +55,13 @@
             <div class="vm-container fadeInLoad" id="vm-greeting-area">
                 <h1 class="heading">Пройдіть тест до Дня Незалежності</h1>
                 <button type="button" class="btn btn-vm" onclick="slideOut()">Розпочати</button>
+                <!-- <a href="http://online.vum.org.ua/" class="btn btn-vm" >Перейти на online.vum.org.ua</a> -->
             </div>
 
             <!-- <div class="vm-container vm-test" id="vm-test-area"> -->
             <div class="vm-test" id="vm-test-area">
 
                 <div class="vm-question">
-                    <div id="q2" class="vm-qst" style="display: none; --transform-webkit: translateX(-100%)">
-                        <div class="vm-qst-head">
-                            <h2>№ 2. Sed convallis ut dui non fermentum?</h2>
-                        </div>
-
-                        <div class="vm-qst-body">
-                            <input type="radio" class="vm-ans" id="ans-5" name="qst-2" checked>
-                            <label id="ans-lb-5" for="ans-5">Etiam auctor pretium iaculis.</label>
-
-                            <input type="radio" class="vm-ans" id="ans-6" name="qst-2">
-                            <label id="ans-lb-6" for="ans-6">Vestibulum ultricies venenatis felis id scelerisque.</label>
-
-                            <input type="radio" class="vm-ans" id="ans-7" name="qst-2" vm-correct>
-                            <label id="ans-lb-7" for="ans-7">Vivamus aliquet sit amet lectus aliquam congue.</label>
-
-                            <input type="radio" class="vm-ans" id="ans-8" name="qst-2">
-                            <label id="ans-lb-8" for="ans-8">Pellentesque sodales, metus eget imperdiet finibus, ante lacus mollis metus, sed vulputate turpis libero sed felis.</label>
-                        </div>
-                    </div>
 
                     <div id="q1" class="vm-qst">
                         <div class="vm-qst-head">
@@ -102,6 +84,28 @@
                     </div>
 
 
+                    <div id="q2" class="vm-qst" style="display: none; --transform-webkit: translateX(-100%)">
+                        <div class="vm-qst-head">
+                            <h2>№ 2. Sed convallis ut dui non fermentum?</h2>
+                        </div>
+
+                        <div class="vm-qst-body">
+                            <input type="radio" class="vm-ans" id="ans-5" name="qst-2" checked>
+                            <label id="ans-lb-5" for="ans-5">Etiam auctor pretium iaculis.</label>
+
+                            <input type="radio" class="vm-ans" id="ans-6" name="qst-2">
+                            <label id="ans-lb-6" for="ans-6">Vestibulum ultricies venenatis felis id scelerisque.</label>
+
+                            <input type="radio" class="vm-ans" id="ans-7" name="qst-2" vm-correct>
+                            <label id="ans-lb-7" for="ans-7">Vivamus aliquet sit amet lectus aliquam congue.</label>
+
+                            <input type="radio" class="vm-ans" id="ans-8" name="qst-2">
+                            <label id="ans-lb-8" for="ans-8">Pellentesque sodales, metus eget imperdiet finibus, ante lacus mollis metus, sed vulputate turpis libero sed felis.</label>
+                        </div>
+                    </div>
+
+
+
 
                     <div id="vm-finnish" class="vm-qst-end" style="display: none">
                         <div class="vm-qst-body">
@@ -118,6 +122,13 @@
 
 
                     <div id="vm-qst-foot" class="vm-qst-footer">
+
+                        <!-- <ul class="list-ic horizontal">
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                        </ul> -->
+
                         <button id="vm-next" type="button" class="btn btn-vm" onclick="nextQst()">Перевірити</button>
                     </div>
                 </div>

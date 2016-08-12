@@ -6,8 +6,6 @@ function slideOut () {
     $("#vm-greeting-area").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
     function(e) {
         $("#vm-greeting-area").hide();
-        // console.log("Transtion end");
-
     });
 }
 
