@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 blockquote {
-    border-left-color: #d6b904;
+    border: none;
+    /*border-left-color: #d6b904;*/
 }
 
 /* === CSS Transitions === */
@@ -176,6 +177,22 @@ blockquote {
     border-radius: 5px;
 }
 
+/*.vm-subblock > .img-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    vertical-align: middle;
+}*/
+
+/*.img-block > .img {
+    display: inline-block;
+}
+
+.vm-subblock img {
+    width: 100%;
+}*/
+
 /* === TEXT BLOCKS AREA === */
 .vm-ctn .vm-block-head {
     text-align: center;
@@ -200,6 +217,27 @@ blockquote {
     margin-bottom: 20px;
 }
 
+.media {
+    margin-bottom: 50px;
+}
+.media-object {
+    padding-right: 10px;
+
+}
+.media-body {
+    padding-left: 10px;
+
+    font-size: 17.5px;
+    vertical-align: middle;
+}
+
+.vm-media-right > .media-object{
+    padding-left: 10px;
+}
+.vm-media-right > .media-body{
+    padding-right: 10px;
+    text-align: right;
+}
 
 /* === TESTING AREA === */
 
