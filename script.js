@@ -2,6 +2,13 @@
 function slideOut () {
     $("#vm-test-area").addClass('fadeIn');
     $("#vm-greeting-area").addClass('fadeOut');
+
+    $("#vm-greeting-area").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+    function(e) {
+        $("#vm-greeting-area").hide();
+        // console.log("Transtion end");
+
+    });
 }
 
 function largeLogo() {
