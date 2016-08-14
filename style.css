@@ -445,29 +445,47 @@ blockquote {
 
 /* === TIMELINE === */
 
-.list-ic a {
+.vm-progress {
+    float: left;
+    padding: 10px 0px;
+
+    margin: 0;
+}
+
+.vm-progress a {
     color: #788288;
 }
-.list-ic li {
+.vm-progress li {
+    display: inline-block;
     position: relative;
 }
-.list-ic li span {
+.vm-progress li span {
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.8em;
     border-radius: 1em;
-    background: #ffffff;
+
+    margin: 0 1em;
+
+    background-color: #fff;
+    /*border: 0.5em solid rgba(176, 176, 176, 0.5);*/
+
     color: white;
     position: relative;
 
     z-index: 1;
 }
-.list-ic li::before {
+.vm-progress li::before {
     content: '';
     position: absolute;
     /*background: #fff;*/
+
+    top: 0.75em;
+    left: -25px;
+    width: 4em;
+    height: 0.3em;
 
     background: linear-gradient(to right, #000 50%, #fff 50%);
     background-size: 200% 100%;
@@ -477,35 +495,20 @@ blockquote {
 
     transition: 2s;
 }
-.list-ic .vm-part-on::before {
+
+.vm-progress .vm-part-on::before {
     /*background-color: #000 !important;*/
     background-position:left bottom !important;
 }
 
-.list-ic.horizontal li {
-    display: inline-block;
-}
-.list-ic.horizontal li span {
-    margin: 0 1em;
-}
-.list-ic.horizontal li::before {
-    top: 0.9em;
-    left: -25px;
-    width: 4em;
-    height: 0.2em;
-}
-.list-ic li:first-child::before {
+
+.vm-progress li:first-child::before {
     display: none;
 }
-.list-ic .active {
-    background: dodgerblue;
+.vm-progress li:first-child span {
+    margin-left: 0;
 }
-.list-ic .active ~ li {
-    background: lightblue;
-}
-.list-ic .active ~ li::before {
-    background: lightblue;
-}
+
 
 
 /* === BLOCK SPECIFIC === */
