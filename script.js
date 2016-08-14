@@ -150,5 +150,5 @@ function nextQst() {
 }
 
 setTimeout(function () {
-    $("#pr-qst-2").addClass("vm-part-on");
+    $("#pr-qst-2").addClass("vm-bar-next");
 }, 2000);

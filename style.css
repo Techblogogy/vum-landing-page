@@ -459,7 +459,9 @@ blockquote {
     display: inline-block;
     position: relative;
 }
-.vm-progress li span {
+
+/* Progress bar circle */
+.vm-progress li button {
     display: inline-block;
     width: 1.8em;
     height: 1.8em;
@@ -470,13 +472,18 @@ blockquote {
     margin: 0 1em;
 
     background-color: #fff;
+    border: none;
     /*border: 0.5em solid rgba(176, 176, 176, 0.5);*/
+
+    outline: none;
 
     color: white;
     position: relative;
 
     z-index: 1;
 }
+
+/* Progress bar line */
 .vm-progress li::before {
     content: '';
     position: absolute;
@@ -496,7 +503,8 @@ blockquote {
     transition: 2s;
 }
 
-.vm-progress .vm-part-on::before {
+/* Draw in progress bar */
+.vm-progress .vm-bar-next::before {
     /*background-color: #000 !important;*/
     background-position:left bottom !important;
 }
@@ -505,7 +513,7 @@ blockquote {
 .vm-progress li:first-child::before {
     display: none;
 }
-.vm-progress li:first-child span {
+.vm-progress li:first-child button {
     margin-left: 0;
 }
 
