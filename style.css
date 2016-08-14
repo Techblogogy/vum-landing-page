@@ -446,86 +446,65 @@ blockquote {
 /* === TIMELINE === */
 
 .list-ic a {
-  color: #788288;
+    color: #788288;
 }
 .list-ic li {
-  position: relative;
+    position: relative;
 }
 .list-ic li span {
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  text-align: center;
-  line-height: 2em;
-  border-radius: 1em;
-  background: #18bc9c;
-  color: white;
-  position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: #ffffff;
+    color: white;
+    position: relative;
+
+    z-index: 1;
 }
 .list-ic li::before {
-  content: '';
-  position: absolute;
-  background: #18bc9c;
-  z-index: -1;
+    content: '';
+    position: absolute;
+    /*background: #fff;*/
+
+    background: linear-gradient(to right, #000 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+
+    z-index: 0;
+
+    transition: 2s;
 }
+.list-ic .vm-part-on::before {
+    /*background-color: #000 !important;*/
+    background-position:left bottom !important;
+}
+
 .list-ic.horizontal li {
-  display: inline-block;
+    display: inline-block;
 }
 .list-ic.horizontal li span {
-  margin: 0 1em;
+    margin: 0 1em;
 }
 .list-ic.horizontal li::before {
-  top: 0.9em;
-  left: -25px;
-  width: 4em;
-  height: 0.2em;
-}
-.list-ic.vertical {
-  padding: 0;
-  margin: 0;
-}
-.list-ic.vertical li {
-  list-style-type: none;
-  text-align: left;
-}
-.list-ic.vertical li span {
-  margin: 1.4em 0;
-}
-.list-ic.vertical li::before {
-  top: -35px;
-  left: 13px;
-  width: 0.2em;
-  height: 4em;
+    top: 0.9em;
+    left: -25px;
+    width: 4em;
+    height: 0.2em;
 }
 .list-ic li:first-child::before {
-  display: none;
+    display: none;
 }
 .list-ic .active {
-  background: dodgerblue;
+    background: dodgerblue;
 }
 .list-ic .active ~ li {
-  background: lightblue;
+    background: lightblue;
 }
 .list-ic .active ~ li::before {
-  background: lightblue;
-}
-
-.vm-progress {
-    /*float: left;*/
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.vm-progress li {
-    float: left;
-
-    margin-left: 2px;
-    font-size: 36pt;
-}
-.vm-progress li::after {
-    content: "•";
-    color: white;
+    background: lightblue;
 }
 
 

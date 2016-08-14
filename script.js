@@ -148,3 +148,7 @@ function nextQst() {
     // curQst++;
     // $("#q"+curQst).effect("slide", {"direction": "right", "mode": "show"}, 1000);
 }
+
+setTimeout(function () {
+    $("#pr-qst-2").addClass("vm-part-on");
+}, 2000);
