@@ -494,18 +494,26 @@ blockquote {
     width: 4em;
     height: 0.3em;
 
-    background: linear-gradient(to right, #000 50%, #fff 50%);
+    background: linear-gradient(to right, #12d200 50%, #fff 50%);
     background-size: 200% 100%;
     background-position:right bottom;
 
     z-index: 0;
 
-    transition: 2s;
+    transition: 1s;
 }
 
 /* Draw in progress bar */
+.vm-progress .vm-done button {
+    background-color: #12d200 !important;
+}
+.vm-progress .vm-fail button {
+    background-color: #d23200 !important;
+}
+
 .vm-progress .vm-bar-next::before {
     /*background-color: #000 !important;*/
+    /*background: linear-gradient(to right, #12d200 50%, #fff 50%);*/
     background-position:left bottom !important;
 }
 
